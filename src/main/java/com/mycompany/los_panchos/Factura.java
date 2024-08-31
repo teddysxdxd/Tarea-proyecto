@@ -9,5 +9,13 @@ package com.mycompany.los_panchos;
  * @author USUARIO
  */
 public class Factura {
+    private String Numero = "1";
+    private Cliente cliente;
+    private String Serie  = "1";
+    private String Producto;
+    private double total = 0;
+    
+    //extraemos datos de la orden de produción 
+    
     
 }
