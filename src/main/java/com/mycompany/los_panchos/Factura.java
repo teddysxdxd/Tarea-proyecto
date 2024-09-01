@@ -17,7 +17,7 @@ public class Factura {
     private String NitEmpresa = "1168780-2";
     
     //extraemos datos de la orden de produción 
-public void CrearFactura (List <DetalleProducto> detalleProductos,List<Producto> prodcutosCatalogo, Cliente cliente){
+public void CrearFactura (List <DetalleProducto> detalleProductos,List<Producto> productosCatalogo, Cliente cliente){
       double total = 0.0; // Variable local para almacenar el total de la factura
 
     // Encabezado de la factura
@@ -52,7 +52,7 @@ public void CrearFactura (List <DetalleProducto> detalleProductos,List<Producto>
             System.out.println("║ Código de producto inválido: " + producto.getCodigo() + " ║");
         }
 
-        System.out.println("║ Detalle: " + producto.getDetallePersonalizacion() + "           ║");
+        System.out.println("║ Detalle: " + producto.getDetallePersonalizacion()+ "           ║");
         System.out.println("║ Precio: Q" + String.format("%.2f", producto.getPrecio()) + "                ║");
         System.out.println("╚════════════════════════════════════╝");
 

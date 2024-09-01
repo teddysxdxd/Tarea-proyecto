@@ -25,17 +25,17 @@ public class Cliente {
         cliente.setNombreCliente(entrada.nextLine());
         
         System.out.println("Ingrese el nit del cliente" +cliente.getNombreCliente());
-        cliente.setNit(entrada.nextLine());
+        cliente.setNitCliente(entrada.nextLine());
         System.out.println("Ingrese la direccion del cliente: " +cliente.getNombreCliente());
         cliente.setDireccionFiscal(entrada.nextLine());
         return cliente;
     }
-            
-    
-    public Cliente(String NombreCliente, int Telefono, String Nit) {
+
+    public Cliente(String NombreCliente, int Telefono, String NitCliente, String DireccionFiscal) {
         this.NombreCliente = NombreCliente;
         this.Telefono = Telefono;
         this.NitCliente = NitCliente;
+        this.DireccionFiscal = DireccionFiscal;
     }
 
     public String getNombreCliente() {
@@ -58,12 +58,8 @@ public class Cliente {
         return NitCliente;
     }
 
-    public void setNit(String NitCliente) {
+    public void setNitCliente(String NitCliente) {
         this.NitCliente = NitCliente;
-    }
-
-    public Cliente(String DireccionFiscal) {
-        this.DireccionFiscal = DireccionFiscal;
     }
 
     public String getDireccionFiscal() {
@@ -73,8 +69,7 @@ public class Cliente {
     public void setDireccionFiscal(String DireccionFiscal) {
         this.DireccionFiscal = DireccionFiscal;
     }
-    
-    
+   
     
     
     

@@ -11,21 +11,19 @@ package com.mycompany.los_panchos;
 public class DetalleProducto {
     private double precio;
     private String codigo;
-    private String DetallPorPerzonalizacion;
-    private String EstatusProducto;
+    private String detallePersonalizacion;
+    private String estadoProducto;
 
     public DetalleProducto() {
     }
 
-    public DetalleProducto(double precio, String codigo, String DetallPorPerzonalizacion, String EstatusProducto) {
+    public DetalleProducto(double precio, String codigo, String detallePersonalizacion, String estadoProducto) {
         this.precio = precio;
         this.codigo = codigo;
-        this.DetallPorPerzonalizacion = DetallPorPerzonalizacion;
-        this.EstatusProducto = EstatusProducto;
+        this.detallePersonalizacion = detallePersonalizacion;
+        this.estadoProducto = estadoProducto;
     }
 
-    
-    
     public double getPrecio() {
         return precio;
     }
@@ -42,35 +40,22 @@ public class DetalleProducto {
         this.codigo = codigo;
     }
 
-    public String getDetallPorPerzonalizacion() {
-        return DetallPorPerzonalizacion;
+    public String getDetallePersonalizacion() {
+        return detallePersonalizacion;
     }
 
-    public void setDetallPorPerzonalizacion(String DetallPorPerzonalizacion) {
-        this.DetallPorPerzonalizacion = DetallPorPerzonalizacion;
+    public void setDetallePersonalizacion(String detallePersonalizacion) {
+        this.detallePersonalizacion = detallePersonalizacion;
     }
 
-    public String getEstatusProducto() {
-        return EstatusProducto;
+    public String getEstadoProducto() {
+        return estadoProducto;
     }
 
-    public void setEstatusProducto(String EstatusProducto) {
-        this.EstatusProducto = EstatusProducto;
+    public void setEstadoProducto(String estadoProducto) {
+        this.estadoProducto = estadoProducto;
     }
 
-    void setDetallePersonalizacion(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    Object getDetallePersonalizacion() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    void setEstadoProducto(String enProduccion) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
     
     
     

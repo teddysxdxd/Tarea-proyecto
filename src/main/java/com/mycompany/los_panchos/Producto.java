@@ -9,39 +9,31 @@ package com.mycompany.los_panchos;
  * @author USUARIO
  */
 public class Producto {
-public String NombreProducto;
-private String codigo;
-private String estado;
-private double precio;
-private String proveedor;
-private String tipoPoducto;
-
+ public String nombreProducto;
+    private String Codigo;
+    private String estado;
+    private double precio;
+    private String proveedor;
+    private String tipoProducto;
+    
     public Producto() {
     }
-
-    public Producto(String NombreProducto, String codigo, String estado, double precio, String proveedor, String tipoPoducto) {
-        this.NombreProducto = NombreProducto;
-        this.codigo = codigo;
-        this.estado = estado;
-        this.precio = precio;
-        this.proveedor = proveedor;
-        this.tipoPoducto = tipoPoducto;
-    }
+    
 
     public String getNombreProducto() {
-        return NombreProducto;
+        return nombreProducto;
     }
 
-    public void setNombreProducto(String NombreProducto) {
-        this.NombreProducto = NombreProducto;
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
 
     public String getCodigo() {
-        return codigo;
+        return Codigo;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCodigo(String Codigo) {
+        this.Codigo = Codigo;
     }
 
     public String getEstado() {
@@ -68,14 +60,13 @@ private String tipoPoducto;
         this.proveedor = proveedor;
     }
 
-    public String getTipoPoducto() {
-        return tipoPoducto;
+    public String getTipoProducto() {
+        return tipoProducto;
     }
 
-    public void setTipoPoducto(String tipoPoducto) {
-        this.tipoPoducto = tipoPoducto;
+    public void setTipoProducto(String tipoProducto) {
+        this.tipoProducto = tipoProducto;
     }
-   
-
-
+    
+    
 }
