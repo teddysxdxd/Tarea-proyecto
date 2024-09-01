@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Cliente {
     private String NombreCliente;
     private int Telefono;
-    private String Nit;
+    private String NitCliente;
     private String DireccionFiscal;
 
     public Cliente() {
@@ -35,7 +35,7 @@ public class Cliente {
     public Cliente(String NombreCliente, int Telefono, String Nit) {
         this.NombreCliente = NombreCliente;
         this.Telefono = Telefono;
-        this.Nit = Nit;
+        this.NitCliente = NitCliente;
     }
 
     public String getNombreCliente() {
@@ -54,12 +54,12 @@ public class Cliente {
         this.Telefono = Telefono;
     }
 
-    public String getNit() {
-        return Nit;
+    public String getNitCliente() {
+        return NitCliente;
     }
 
-    public void setNit(String Nit) {
-        this.Nit = Nit;
+    public void setNit(String NitCliente) {
+        this.NitCliente = NitCliente;
     }
 
     public Cliente(String DireccionFiscal) {
