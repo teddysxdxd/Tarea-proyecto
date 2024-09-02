@@ -22,28 +22,33 @@ public class Catalogoo {
         producto1.setEstado("Bodega");
         producto1.setNombreProducto("Camisa Veraniega");
         producto1.setPrecio(99.99);
-        producto1.setTipoPoducto("Importacion");
+        producto1.setTipoProducto("Importacion");
+        productos.add(producto1);
         
         Producto producto2 = new Producto();
         producto2.setCodigo("002");
         producto2.setEstado("Bodega");
         producto2.setNombreProducto("Sombrilla tutiflor");
         producto2.setPrecio(105.90);
-        producto2.setTipoPoducto("Local");
+        producto2.setTipoProducto("Local");
+        productos.add(producto2);
+
         
         Producto producto3 = new Producto();
         producto3.setCodigo("003");
         producto3.setEstado("Bodega");
         producto3.setNombreProducto("Gorra naik-promax");
         producto3.setPrecio(205.30);
-        producto3.setTipoPoducto("Importada");
+        producto3.setTipoProducto("Importada");
+        productos.add(producto3);
         
         Producto producto4 = new Producto();
         producto4.setCodigo("004");
         producto4.setEstado("Bodega");
         producto4.setNombreProducto("Sudadera abidaz");
         producto4.setPrecio(205.30);
-        producto4.setTipoPoducto("Local");
+        producto4.setTipoProducto("Local");
+        productos.add(producto4);
          
         
          Producto producto5 = new Producto();
@@ -51,7 +56,8 @@ public class Catalogoo {
         producto5.setEstado("Bodega");
         producto5.setNombreProducto("Cinturon aquapark");
         producto5.setPrecio(75.25);
-        producto5.setTipoPoducto("Local");
+        producto5.setTipoProducto("Local");
+        productos.add(producto4);
         
         return productos;
         

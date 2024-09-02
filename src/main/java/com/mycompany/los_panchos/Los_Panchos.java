@@ -12,7 +12,7 @@ import Catalogo.Catalogoo;
 import java.util.*;
 public class Los_Panchos {
 
-      public static void main(String[] args) {
+      public static void main(String[] args) throws InterruptedException {
   Scanner sp = new Scanner(System.in);
     Integer menu = 0;
     String salir = "no";
@@ -54,7 +54,7 @@ public class Los_Panchos {
                     break;
                 case 3:
                     ordenProduccion.terminarOrdenes(ordenesProduccion, productosCatalogo);
-                    System.out.println("hola");
+                    Thread.sleep(4000);
                     break;
 
                 case 5:
