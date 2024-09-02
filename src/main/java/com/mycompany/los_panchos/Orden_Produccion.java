@@ -30,13 +30,20 @@ public class Orden_Produccion {
 //        DetalleProducto detalleProducto = new DetalleProducto();
         Scanner sp = new Scanner (System.in);
         int i = 1;
+        var size = productosCatalogo.size();
         do { 
             DetalleProducto detalleProducto = new DetalleProducto();
             System.out.println("_______________________________");
             System.out.println("Producto numero:"+i);
             System.out.println("ingrese el codigo del producto");
             detalleProducto.setCodigo(sp.nextLine());
-            System.out.println("el producto es: "+productosCatalogo.get(Integer.parseInt(detalleProducto.getCodigo())).getNombreProducto());
+            var code = Integer.parseInt(detalleProducto.getCodigo());
+            if (code > size) {
+                System.out.println("El código de producto no existe.");
+                seguir = "si";
+                continue;
+            }
+            System.out.println("el producto es: "+productosCatalogo.get(code).getNombreProducto());
             System.out.println("ingrese el detalle de la personalizacion del producto");
             System.out.println("en dado caso no exista una personalizacion ingrese NA");
             detalleProducto.setDetallePersonalizacion(sp.nextLine());
